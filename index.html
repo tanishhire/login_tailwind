@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-[#edf3ff] flex mx-auto items-center justify-center min-h-screen"
+  >
+    <div class="flex items-center justify-end">
+      <div
+        class="z-20  absolute items-center justify-center top-40 w-80 max-h-screen h-[550px] bg-[#4d49e8] shadow-xl rounded-xl "
+      ></div>
+
+      <div
+        class="z-30 relative bg-white rounded-xl py-16 px-12 w-[400px] justify-center my-auto shadow-xl right-10"
+      >
+        <h1 class="text-3xl text-[#11132a] font-bold">Sign in</h1>
+        <form action="">
+          <div class="relative mt-6">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-gray-500 focus:outline-none"
+              autocomplete="NA"
+            />
+            <label
+              for="email"
+              class="pointer-events-none absolute top-0 left-0 origin-left -translate-y-1/2 transform text-sm text-gray-800 opacity-75 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:pl-0 peer-focus:text-sm peer-focus:text-gray-800"
+              >Email Address</label
+            >
+          </div>
+          <div class="relative mt-6">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="peer peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-gray-500 focus:outline-none"
+            />
+            <label
+              for="password"
+              class="pointer-events-none absolute top-0 left-0 origin-left -translate-y-1/2 transform text-sm text-gray-800 opacity-75 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:pl-0 peer-focus:text-sm peer-focus:text-gray-800"
+              >Password</label
+            >
+          </div>
+          <div class="flex flex-row w-full mt-10 items-center">
+            <button class="rounded-full bg-[#4d49e8]  w-1/2 py-3 text-white hover:scale-105 duration-300 hover:bg-white hover:text-[#4d49e8] hover:border-2 border-[#4d49e8] shadow-xl ">Sign in</button>
+            <a href="#" class="cursor-pointer text-[#11132a] inline text-xs items-center ml-4 font-semibold duration-300 hover:scale-105">Forgot your password?</a>
+          </div>
+        </form>
+        <div class="mx-auto items-center justify-center mt-10 text-[#11132a]">
+            <h2 class="text-center">Don't have an account ? </h2>
+            <p class="text-center underline justify-center cursor-pointer duration-300 hover:scale-105 ">Sign up</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
